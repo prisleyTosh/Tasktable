@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Duty Roster Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+      body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; Center the contents vertically */
+      align-items: center;  /* Center the contents horizontally*/
+      height: 100vh; /* Ensure the body takes the full viewport height */
+      margin: 0;
+      padding: 0;
+      background-color: green;
+
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 600px; /* Limit the table width for small screens */
+      cursor: pointer;
+    }
+    .task-tittle{
+        background-color: whitesmoke;
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    @media screen and (max-width: 600px) {
+      /* Adjust table layout for small screens */
+      th, td {
+        width: 25%; /* Show each column as 25% width */
+      }
+    }
+    .wkday{
+        font-weight: bold;
+        font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="task-tittle">Weekly Task Schedule</h2>
+  <table>
+    <tr>
+      <th >Day</th>
+      <th>Cooking</th>
+      <th>Dish wash</th>
+      <th>Mopping</th>
+      <th>Toilet</th>
+    </tr>
+    <tr>
+      <td class="wkday">Mon</td>
+      <td>Tosh</td>
+      <td>Muriuki</td>
+      <td>Brian</td>
+      <td>George</td>
+    </tr>
+    <tr>
+      <td class="wkday">Tue</td>
+      <td>Muriuki</td>
+      <td>Tosh</td>
+      <td>Brian</td>
+      <td>George</td>
+    </tr>
+    <tr>
+      <td class="wkday">Wed</td>
+      <td>Brian</td>
+      <td>Muriuki</td>
+      <td>Tosh</td>
+      <td>George</td>
+    </tr>
+    <tr>
+      <td class="wkday">Thu</td>
+      <td>George</td>
+      <td>Muriuki</td>
+      <td>Brian</td>
+      <td>Tosh</td>
+    </tr>
+    <tr>
+      <td class="wkday">Fri</td>
+      <td>Brian</td>
+      <td>Tosh</td>
+      <td>George</td>
+      <td>Muriuki</td>
+    </tr>
+    <tr>
+      <td class="wkday">Sat</td>
+      <td>Tosh</td>
+      <td>Muriuki</td>
+      <td>George</td>
+      <td>Brian</td>
+    </tr>
+    <tr>
+      <td class="wkday">Sun</td>
+      <td>Brian</td>
+      <td>Tosh</td>
+      <td>Muriuki</td>
+      <td>George</td>
+    </tr>
+  </table>
+</body>
+</html>
